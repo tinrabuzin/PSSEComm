@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectType="typeDynamicLibrary" ProjectCreator="Intel Fortran" Keyword="Dll" Version="11.0" ProjectIdGuid="{29F87939-E615-487E-AE0A-1C1BAB39D571}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|x64" ConfigurationType="typeDynamicLibrary">
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="/dll /Qip" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" BufferedIO="true" AdditionalIncludeDirectories="$(VS_PSSE_64)\PSSLIB" FixedFormLineLength="fixedLength132" AlternateParameterSyntax="false" F2003Semantics="true" FPS4Logicals="true" DisableSpecificDiagnostics="11073" DebugParameter="debugParameterAll" WarnDeclarations="true" WarnUnusedVariables="true" WarnTruncateSource="true" WarnUncalled="true" WarnInterfaces="true" LocalVariableStorage="localStorageAutomatic" CallingConvention="callConventionCVF" Traceback="true" BoundsCheck="true" UninitializedVariablesCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL" Interfaces="true"/>
+				<Tool Name="VFLinkerTool" AdditionalOptions="/ignore:4049 /ignore:4217 /Qdiag-disable:11073" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(VS_PSSE_64)\PSSLIB" ModuleDefinitionFile="dsusr.def" GenerateDebugInformation="true" GenerateMapFile="true" MapFileName="$(TargetDir)$(TargetName).map" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="ptiutils.lib crutch.lib psseng.lib dsmdl.lib C:\Users\tin.rabuzin\dev\External\PSSEComm\src\pssecomm_cpp\x64\Debug\PSSEComm.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool" CommandLine="cd $(Platform)\$(ConfigurationName)&#xA;echo :::: dumpbin.exe /linkermember ..\..\dsusrlib\$(Platform)\$(ConfigurationName)\dsusrlib.lib &quot;&gt;&quot; dsusrlib.dmp&#xA;dumpbin.exe /linkermember ..\..\dsusrlib\$(Platform)\$(ConfigurationName)\dsusrlib.lib &gt; dsusrlib.dmp&#xA;echo :::: ..\..\libdef.exe dsusrlib.dmp dsusrlib.nam&#xA;&quot;%VS_PSSE_64%\PSSBIN\libdef.exe&quot; dsusrlib.dmp dsusrlib.nam&#xA;echo :::: sort dsusrlib.nam &gt; dsusrlib.txt&#xA;sort dsusrlib.nam &gt; dsusrlib.txt&#xA;echo EXPORTS &gt; export.txt&#xA;echo :::: copy export.txt + dsusrlib.txt ..\..\dsusr.def&#xA;copy export.txt + dsusrlib.txt ..\..\dsusr.def&#xA;del /q dsusrlib.dmp&#xA;del /q dsusrlib.nam&#xA;del /q *.txt&#xA;cd ..\.."/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64" ConfigurationType="typeDynamicLibrary">
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="/dll /Qip /assume:nofpe_summary" SuppressStartupBanner="true" OmitFramePointers="false" BufferedIO="true" AdditionalIncludeDirectories="$(VS_PSSE_64)\PSSLIB" FixedFormLineLength="fixedLength132" AlternateParameterSyntax="false" FPS4Logicals="true" DisableSpecificDiagnostics="11073" WarnDeclarations="true" WarnTruncateSource="true" SuppressUsageMessages="true" LocalVariableStorage="localStorageAutomatic" FloatingPointExceptionHandling="fpe0" CallingConvention="callConventionCVF" Traceback="true"/>
+				<Tool Name="VFLinkerTool" AdditionalOptions="/ignore:4049 /ignore:4217 /Qdiag-disable:11073" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(VS_PSSE_64)\PSSLIB" ModuleDefinitionFile="dsusr.def" GenerateMapFile="true" MapFileName="$(TargetDir)$(TargetName).map" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="ptiutils.lib psseng.lib dsmdl.lib ../sghppp_cpp/Release/HPPP.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool" CommandLine="cd $(Platform)\$(ConfigurationName)&#xA;echo :::: dumpbin.exe /linkermember ..\..\dsusrlib\$(Platform)\$(ConfigurationName)\dsusrlib.lib &quot;&gt;&quot; dsusrlib.dmp&#xA;dumpbin.exe /linkermember ..\..\dsusrlib\$(Platform)\$(ConfigurationName)\dsusrlib.lib &gt; dsusrlib.dmp&#xA;echo :::: ..\..\..\pssbin\libdef.exe dsusrlib.dmp dsusrlib.nam&#xA;&quot;%VS_PSSE_64%\PSSBIN\libdef.exe&quot; dsusrlib.dmp dsusrlib.nam&#xA;echo :::: sort dsusrlib.nam &gt; dsusrlib.txt&#xA;sort dsusrlib.nam &gt; dsusrlib.txt&#xA;echo EXPORTS &gt; export.txt&#xA;echo :::: copy export.txt + dsusrlib.txt ..\..\dsusr.def&#xA;copy export.txt + dsusrlib.txt ..\..\dsusr.def&#xA;del /q dsusrlib.dmp&#xA;del /q dsusrlib.nam&#xA;del /q *.txt&#xA;cd ..\.."/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|Win32" ConfigurationType="typeDynamicLibrary">
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="/dll /Qip /assume:nofpe_summary" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" BufferedIO="true" AdditionalIncludeDirectories="$(VS_PSSE_32)\PSSLIB" FixedFormLineLength="fixedLength132" AlternateParameterSyntax="false" FPS4Logicals="true" DisableSpecificDiagnostics="11073" DebugParameter="debugParameterAll" WarnDeclarations="true" WarnUnusedVariables="true" WarnTruncateSource="true" WarnUncalled="true" WarnInterfaces="true" LocalVariableStorage="localStorageAutomatic" CallingConvention="callConventionCVF" Traceback="true" BoundsCheck="true" UninitializedVariablesCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL" Interfaces="true"/>
+				<Tool Name="VFLinkerTool" AdditionalOptions="/ignore:4049 /ignore:4217 /Qdiag-disable:11073" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(VS_PSSE_32)\PSSLIB" ModuleDefinitionFile="dsusr.def" GenerateDebugInformation="true" GenerateMapFile="true" MapFileName="$(TargetDir)$(TargetName).map" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="../sghppp_cpp/Debug/HPPP.lib ptiutils.lib crutch.lib psseng.lib dsmdl.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool" CommandLine="cd $(ConfigurationName)&#xA;echo :::: dumpbin.exe /linkermember ..\dsusrlib\$(ConfigurationName)\dsusrlib.lib &quot;&gt;&quot; dsusrlib.dmp&#xA;dumpbin.exe /linkermember ..\dsusrlib\$(ConfigurationName)\dsusrlib.lib &gt; dsusrlib.dmp&#xA;echo :::: C:\Program Files (x86)\PTI\PSSE34\PSSBIN\libdef.exe dsusrlib.dmp dsusrlib.nam&#xA;&quot;%VS_PSSE_32%\PSSBIN\libdef.exe&quot; dsusrlib.dmp dsusrlib.nam&#xA;echo :::: sort dsusrlib.nam &gt; dsusrlib.txt&#xA;sort dsusrlib.nam &gt; dsusrlib.txt&#xA;echo EXPORTS &gt; export.txt&#xA;echo :::: copy export.txt + dsusrlib.txt ..\dsusr.def&#xA;copy export.txt + dsusrlib.txt ..\dsusr.def&#xA;cd .."/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32" ConfigurationType="typeDynamicLibrary">
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="/dll /Qip /assume:nofpe_summary" SuppressStartupBanner="true" OmitFramePointers="false" BufferedIO="true" AdditionalIncludeDirectories="$(VS_PSSE_32)\PSSLIB" FixedFormLineLength="fixedLength132" AlternateParameterSyntax="false" FPS4Logicals="true" DisableSpecificDiagnostics="11073" WarnDeclarations="true" WarnTruncateSource="true" SuppressUsageMessages="true" LocalVariableStorage="localStorageAutomatic" FloatingPointExceptionHandling="fpe0" CallingConvention="callConventionCVF" Traceback="true"/>
+				<Tool Name="VFLinkerTool" AdditionalOptions="/ignore:4049 /ignore:4217 /Qdiag-disable:11073" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="$(VS_PSSE_32)\PSSLIB" ModuleDefinitionFile="dsusr.def" GenerateMapFile="true" MapFileName="$(TargetDir)$(TargetName).map" SubSystem="subSystemWindows" LinkDLL="true" AdditionalDependencies="../sghppp_cpp/Release/HPPP.lib ptiutils.lib crutch.lib psseng.lib dsmdl.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool" CommandLine="cd $(ConfigurationName)&#xA;echo :::: dumpbin.exe /linkermember ..\dsusrlib\$(ConfigurationName)\dsusrlib.lib &quot;&gt;&quot; dsusrlib.dmp&#xA;dumpbin.exe /linkermember ..\dsusrlib\$(ConfigurationName)\dsusrlib.lib &gt; dsusrlib.dmp&#xA;echo :::: ..\..\pssbin\libdef.exe dsusrlib.dmp dsusrlib.nam&#xA;&quot;%VS_PSSE_32%\PSSBIN\libdef.exe&quot; dsusrlib.dmp dsusrlib.nam&#xA;echo :::: sort dsusrlib.nam &gt; dsusrlib.txt&#xA;sort dsusrlib.nam &gt; dsusrlib.txt&#xA;echo EXPORTS &gt; export.txt&#xA;echo :::: copy export.txt + dsusrlib.txt ..\dsusr.def&#xA;copy export.txt + dsusrlib.txt ..\dsusr.def&#xA;del /q dsusrlib.dmp&#xA;del /q dsusrlib.nam&#xA;del /q *.txt&#xA;cd .."/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath=".\PSSECOMM_functions.for"/>
+		<File RelativePath=".\PSSECOMM_main.for"/>
+		<File RelativePath=".\PSSECOMM_variables.for"/>
+		<File RelativePath=".\PSSECOMM_wrapper.for"/></Filter></Files>
+	<Globals/></VisualStudioProject>

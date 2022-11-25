@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectType="typeStaticLibrary" ProjectCreator="Intel Fortran" Keyword="Static Library" Version="11.0" ProjectIdGuid="{CF77AA82-AA5F-4A0C-AA13-73E667753431}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|x64" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="/Qip" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" BufferedIO="true" AdditionalIncludeDirectories="$(VS_PSSE_64)\PSSLIB" FixedFormLineLength="fixedLength132" AlternateParameterSyntax="false" F2003Semantics="true" FPS4Logicals="true" DisableSpecificDiagnostics="11073" DebugParameter="debugParameterAll" WarnDeclarations="true" WarnUnusedVariables="true" WarnTruncateSource="true" WarnUncalled="true" WarnInterfaces="true" LocalVariableStorage="localStorageAutomatic" CallingConvention="callConventionCVF" Traceback="true" BoundsCheck="true" UninitializedVariablesCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL" Interfaces="true"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Release|x64" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="/Qip" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" BufferedIO="true" AdditionalIncludeDirectories="$(VS_PSSE_64)\PSSLIB" FixedFormLineLength="fixedLength132" AlternateParameterSyntax="false" F2003Semantics="true" FPS4Logicals="true" DisableSpecificDiagnostics="11073" DebugParameter="debugParameterAll" WarnDeclarations="true" WarnTruncateSource="true" SuppressUsageMessages="true" LocalVariableStorage="localStorageAutomatic" FloatingPointExceptionHandling="fpe1" CallingConvention="callConventionCVF" Traceback="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Debug|Win32" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="/Qip /assume:nofpe_summary" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" BufferedIO="true" AdditionalIncludeDirectories="$(VS_PSSE_32)\PSSLIB" FixedFormLineLength="fixedLength132" AlternateParameterSyntax="false" F2003Semantics="true" FPS4Logicals="true" DisableSpecificDiagnostics="11073" DebugParameter="debugParameterAll" WarnDeclarations="true" WarnUnusedVariables="true" WarnTruncateSource="true" WarnUncalled="true" WarnInterfaces="true" LocalVariableStorage="localStorageAutomatic" CallingConvention="callConventionCVF" Traceback="true" BoundsCheck="true" UninitializedVariablesCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL" Interfaces="true"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Release|Win32" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="/Qip /assume:nofpe_summary" SuppressStartupBanner="true" OmitFramePointers="false" BufferedIO="true" AdditionalIncludeDirectories="$(VS_PSSE_32)\PSSLIB" FixedFormLineLength="fixedLength132" AlternateParameterSyntax="false" F2003Semantics="true" FPS4Logicals="true" DisableSpecificDiagnostics="11073" WarnDeclarations="true" WarnTruncateSource="true" SuppressUsageMessages="true" LocalVariableStorage="localStorageAutomatic" FloatingPointExceptionHandling="fpe1" CallingConvention="callConventionCVF" Traceback="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Release|Win32" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="/Qip /assume:nofpe_summary" SuppressStartupBanner="true" OmitFramePointers="false" BufferedIO="true" AdditionalIncludeDirectories="$(VS_PSSE_32)\PSSLIB" FixedFormLineLength="fixedLength132" AlternateParameterSyntax="false" F2003Semantics="true" FPS4Logicals="true" DisableSpecificDiagnostics="11073" WarnDeclarations="true" WarnTruncateSource="true" SuppressUsageMessages="true" LocalVariableStorage="localStorageAutomatic" FloatingPointExceptionHandling="fpe1" CallingConvention="callConventionCVF" Traceback="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath="..\PSSECOMM_functions.for"/>
+		<File RelativePath="..\PSSECOMM_main.for"/>
+		<File RelativePath="..\PSSECOMM_variables.for"/>
+		<File RelativePath="..\PSSECOMM_wrapper.for"/></Filter></Files>
+	<Globals/></VisualStudioProject>
